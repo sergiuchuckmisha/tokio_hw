@@ -1,9 +1,14 @@
+#![feature(extern_prelude)]
 
 extern crate tokio;
+extern crate futures;
+extern crate tokio_core;
 
 use tokio::io;
 use tokio::net::TcpListener;
 use tokio::prelude::*;
+
+mod examples;
 
 
 fn main() {
