@@ -8,6 +8,7 @@ and does not work in ./src/...
 
 use super::*;
 
-//mod file_read;//todo
+mod file_read;//todo
 mod hw_future;
 mod hand_made_future;
+mod hand_made_future_with_duration;

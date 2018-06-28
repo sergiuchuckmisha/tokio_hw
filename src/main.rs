@@ -1,8 +1,11 @@
 #![feature(extern_prelude)]
+#![feature(proc_macro, generators)]
 
 extern crate tokio;
-extern crate futures;
+//extern crate futures;
 extern crate tokio_core;
+#[macro_use] extern crate futures_await as futures;
+#[macro_use] extern crate failure;
 
 use tokio::io;
 use tokio::net::TcpListener;
